@@ -406,6 +406,8 @@ var pjXML = (function () {
           depth = 2;
         } else if (res) {
           ar.push(nd);
+        } else if (res === null) {
+          depth = 1;
         }
 
         if (--depth) {
